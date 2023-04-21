@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
+<style>
+    html, body, main {background-color: white;}
+    main {margin: 3rem auto; max-width: 78rem;}
+
+    h2 {padding-bottom: 0.25rem;}
+
+    dd, dt {display: inline-block; margin-top: 8px;}
+    dt {font-weight: 100; vertical-align: top;}
+    dt::after {content: ':';}
+    dd {font-weight: 700;  margin-left: 20px;}
+
+    /* About the evaluation */
+    div:first-of-type dt {width: 200px;}
+    div:first-of-type dd {width: calc(100% - 220px);}
+    /* Scope of the evaluation */
+    div:not(:first-of-type) dt {width: 275px;}
+    div:not(:first-of-type) dd {width: calc(100% - 295px);}
+
+    /* Summary results */
+    main > ul:first-of-type {background-color: var(--off-white); color: white; display: flex; list-style-type: none; padding: 0;}
+    main > ul:first-of-type li {color: var(--off-black); font-size: 1.125rem; font-weight: 400; padding-bottom: 0.5rem; padding-top: 1rem; text-align: center; width: 20%;}
+    main > ul:first-of-type li span:first-child {color: var(--ocean); display: block; font-size: 3rem; line-height: 1.25;}
+
+    h4 {font-size: 1.5rem;}
+
+    table {width: 100%;}
+    th, td {text-align: left;}
+    tr > *:nth-child(1) {width: 30%}
+    tr > *:nth-child(2) {width: 25%}
+    tr > *:nth-child(3) {width: 45%}
+    /* reset first column styling */
+    th[scope="row"] {background-color: transparent; color: var(--off-black); font-weight: 100;}
+
+    ol {padding-left: 1rem;}
+
+</style>
